@@ -23,6 +23,7 @@ TreeNode* searchBST(TreeNode* root, int val) {
         return root;
     }
     TreeNode* deleteNode(TreeNode* root, int key) {
+            //FIND TARGET KEY
         if(searchBST(root, key) != NULL){
             if (root->val > key) {
                 root->left = deleteNode(root->left, key);
